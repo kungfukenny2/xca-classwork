@@ -1,0 +1,19 @@
+.fred{
+    float:left;
+    border-style: solid;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.shell{
+    float:right;
+    border-style:solid;
+    height: 200px;
+}
+
+.cajun{
+    float:left;
+    border-style: solid;
+    height:200px;
+    margin-right: 20px;
+}
