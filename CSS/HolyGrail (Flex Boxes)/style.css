@@ -1,0 +1,43 @@
+/*notes on how to organize flex boxes*/
+
+/*body{
+    height: 100vh;
+    margin: 0;
+}*/
+
+.container{
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+ }
+
+header{
+    flex: 1;
+    background-color:blueviolet; 
+}
+
+main{
+    flex:3;
+    background-color: green;
+    display: flex;
+}
+.sidebar{
+    background-color: darkcyan;
+    flex:1;
+}
+.content{
+    background-color:gold;
+    flex:2;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.addons{
+    background-color: khaki;
+    flex:1;
+}
+
+footer{
+    flex:1;
+    background-color:darkturquoise;
+}
