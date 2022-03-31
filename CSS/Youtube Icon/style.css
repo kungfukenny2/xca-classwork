@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background-color: #1f1f1f;
+    color: white;
+    font-family: Roboto;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+#yt-icon > img {
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#circle-check {
+    fill: #a0a0a0;
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+
+
+.card1 > img{
+    width: 320px;
+    height: 180px;
+    border-bottom: solid red;
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#yt-icon {
+    flex-direction: column;
+    height: 80px;
+    min-width: 40px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.dots {
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+}
+
+#live-button {
+    font-weight: 550;
+    color: #FC3D3E;
+    background-color: #1f1f1f;
+    border: 1.2px solid #DF393A;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 80px;    
+    padding: 3px;
+}
+
+.text-container{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0px;
+    margin-left: 10px;
+
+}
+
+#title-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#card-title{
+    font-weight: bold;
+}
+.card-text{
+    margin: 5px;
+    
+}
+
+#card-account {
+    display: flex;
+    align-items: center;
+}
+
+.text2 {
+    color: #a0a0a0;
+    margin-bottom: 2px;
+    margin-top: 1px;
+}
