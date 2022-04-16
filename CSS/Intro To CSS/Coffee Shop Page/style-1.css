@@ -1,0 +1,69 @@
+body{
+   background-color: rgb(195, 212, 189); 
+}
+h1 {
+font-size: larger;
+}
+
+.navbar{
+   justify-content: end;
+   
+}
+
+.nav-link{
+   color: #0f5132;
+   
+}
+
+
+.herobanner{
+   height: 830px;
+   background-image:url(https://perfectdailygrind.com/wp-content/uploads/2019/02/coffee-bar-1.jpg);
+   background-size:cover;
+   background-attachment: fixed;
+}
+
+.bannertext{
+   border: 20px solid;
+   height: 30px;
+   padding: 400px;
+   color: rgb(28, 107, 38);
+   font-size:xx-large;
+   text-align: center;
+}
+
+.form{
+   padding-left: 600px;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+}
+
+
+.order{
+   font-size: xx-large;
+   text-align: center;
+   padding: 10px;
+   padding-right: 600px;
+}
+
+
+h2{
+font-size:large; 
+}
+
+.menu{
+   display: flex;
+   flex-direction: row;
+}
+
+
+.drinks{
+   justify-content: center;
+}
+
+.button{
+   display: flex;
+   flex-direction:column;
+}
+
