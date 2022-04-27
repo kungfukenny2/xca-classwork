@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    background-color: #171717;
+    color: white;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+}
+
+#wholer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#whole-container {
+    display: flex;
+}
+
+.hamburg-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#nav-bar > ul{
+    list-style: none;
+    padding: 0;
+    
+}
+
+#sub {
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
+
+#lib{
+    padding-top: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    margin: 20px;
+    transform-origin: center;
+}
+
+#yt-icon > img {
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#circle-check {
+    fill: #a0a0a0;
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+.card1 > img, video{
+    width: 100%;
+    height: 100%px;
+    border-bottom: 4px solid red;
+}
+
+video{
+    display: none;
+}
+
+.card2 {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#yt-icon {
+    text-align: center;
+    margin-right: 0;
+    height: 80px;
+    min-width: 40px;
+    margin-top: 5px;
+}
+
+.dots {
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+    visibility: hidden;
+}
+
+#live-button {
+    font-weight: 550;
+    color: #FC3D3E;
+    background-color: #1f1f1f;
+    border: 1.2px solid #DF393A;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    width: 80px;    
+    padding: 3px;
+}
+
+.text-container{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0px;
+    margin-left: 5px;
+
+}
+
+#title-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#card-title{
+    font-weight: bold;
+}
+.card-text{
+    margin: 5px;
+    
+}
+
+#card-account {
+    display: flex;
+    align-items: center;
+}
+
+.text2 {
+    color: #a0a0a0;
+    margin-bottom: 2px;
+    margin-top: 1px;
+}
+
+.hyperlink{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#hover-buttons{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1E1E1E;
+    
+}
+
+.hover-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0px;
+    gap: 5px;
+    font-size: 12px;
+    margin: 5px;
+    border-style: none;
+    border-radius: 2px;
+    color: #a0a0a0;
+    background-color: #313131;
+}

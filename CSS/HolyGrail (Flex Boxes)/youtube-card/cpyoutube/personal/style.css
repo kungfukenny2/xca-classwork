@@ -1,0 +1,30 @@
+.card {
+    height: 300px;
+    width: 300px;
+}
+
+.card-img {
+    width: 300px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-uploader-img {
+    width: 50px;
+    padding: 8px;
+}
+
+.card-details {
+    flex: 3;
+}
+
+.card-title {
+    padding: 8px 0;
+}
+
+.kebab-menu {
+
+}

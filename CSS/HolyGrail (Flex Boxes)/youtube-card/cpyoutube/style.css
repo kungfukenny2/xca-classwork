@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: #1f1f1f;
+    color: white;
+    font-family: Roboto;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+#yt-icon > img {
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#circle-check {
+    fill: #a0a0a0;
+    width: 14px;
+    height: 14px;
+}
+
+
+.card1 > img{
+    width: 320px;
+    height: 180px;
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#yt-icon {
+    flex-direction: column;
+    height: 80px;
+    width: 36px;
+    margin-top: 5px;
+}
+
+#dots {
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+    fill: #ffff;
+}
+
+#live-button {
+    font-weight: bold;
+    color: #FC3D3E;
+    background-color: #1f1f1f;
+    border: 1px solid #DF393A;
+    border-radius: 1px;
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 80px;    
+    padding: 3px;
+}
+
+.text-container{
+    display: flex;
+    flex-flow: column; /* commented out wrap */
+    margin: 0px;
+    margin-left: 10px;
+
+}
+
+#title-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#card-title{
+    font-weight: bold;
+}
+.card-text{
+    margin: 5px;
+    
+}
+
+.text2{
+    color: #a0a0a0
+}
