@@ -30,7 +30,7 @@
     
     
 //2. Execute the function declared above
-    myFunction():
+    myFunction()
 
 //3. Create a function that takes a number as a parameter. This function should return a number that is double the number in the parameter 
     function doubleNumber1(number1){

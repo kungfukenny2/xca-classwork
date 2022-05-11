@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=style.css>
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <h3>Use the alphabet below to guess the word, or click "Hint" to get a clue :)</h3>
+    <br>
+ 
+    <div class="alph">
+        
+        <button id=letter onclick="letter('a')">a</button>
+        <button id=letter onclick="letter('b')">b</button>
+        <button id=letter onclick="letter('c')">c</button>
+        <button id=letter onclick="letter('d')">d</button>
+        <button id=letter onclick="letter('e')">e</button>
+        <button id=letter onclick="letter('f')">f</button>
+        <button id=letter onclick="letter('g')">g</button>
+        <button id=letter onclick="letter('h')">h</button>
+        <button id=letter onclick="letter('i')">i</button>
+        <button id=letter onclick="letter('j')">j</button>
+        <button id=letter onclick="letter('k')">k</button>
+        <button id=letter onclick="letter('l')">l</button>
+        <button id=letter onclick="letter('m')">m</button>
+        <button id=letter onclick="letter('n')">n</button>
+        <button id=letter onclick="letter('o')">o</button>
+        <button id=letter onclick="letter('p')">p</button>
+        <button id=letter onclick="letter('q')">q</button>
+        <button id=letter onclick="letter('r')">r</button>
+        <button id=letter onclick="letter('s')">s</button>
+        <button id=letter onclick="letter('t')">t</button>
+        <button id=letter onclick="letter('u')">u</button>
+        <button id=letter onclick="letter('v')">v</button>
+        <button id=letter onclick="letter('w')">w</button>
+        <button id=letter onclick="letter('x')">x</button>
+        <button id=letter onclick="letter('y')">y</button>
+        <button id=letter onclick="letter('z')">z</button>
+    </div>
+    <br>
+    <br>
+
+
+
+    <h3>Choose Category:</h3>
+    <div class="choose">
+        <button id="category" onclick="chosenCategory('movies')">Movies</button>
+        <button id="category" onclick="chosenCategory('food')">Food</button>
+    </div>
+    
+    
+    <div class="dash1">
+        <div class="dash2">
+            <p>__</p>
+            <p>__</p>
+            <p>__</p>
+            <p>__</p>
+            <p>__</p>
+            
+        </div>
+    </div>
+    
+    <h3 id="mylives">Remaining Lives: </h3>
+  
+        <div class="btn">
+            <button class="hint" onclick="hint()">Hint</button>
+        </div>
+        <br>
+        <div class="btn">
+            <button class="play" onclick="reset">Play Again</button>
+        </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

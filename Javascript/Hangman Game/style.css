@@ -1,0 +1,109 @@
+body{
+    background-color: #d4d5e9;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 160px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+h1, h3{
+    color: rgb(85, 84, 84);
+    display: flex;
+    justify-content: center;
+
+}
+
+.alph{
+   display:flex;
+    justify-content:center;
+    color:white; 
+    
+}
+
+#letter{
+    background-color:#B2B4D8;
+    border-radius: 10px;
+    width: 50px;
+    color: white;
+    font-size: large
+}
+
+#letter:hover{
+    background-color: cornflowerblue;
+}
+#letter:active{
+    background-color: mediumseagreen;
+}
+
+
+.btn{
+    display:flex;
+    justify-content:center;
+}
+
+.choose{
+    display:flex;
+    justify-content: center;
+}
+#category{
+    height:40px;
+    width:100px;
+    border-radius: 50px;
+    background-color: #B2B4D8;
+    color:white;
+}
+
+#category:hover{
+    background-color:cornflowerblue;
+}
+#category:active{
+    background-color:mediumseagreen;
+}
+#category:focus{
+    background-color: mediumseagreen;
+}
+
+.dash1{
+    display: flex;
+    justify-content: center;
+}
+
+.dash2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    color: white;
+
+}
+
+.play{
+    height:40px;
+    width:100px;
+    border-radius: 50px;
+    background-color: #B2B4D8;
+    color:white;
+}
+
+.play:hover{
+    background-color:cornflowerblue;
+}
+.play:active{
+    background-color: mediumseagreen;
+}
+
+
+
+.hint{
+    height:40px;
+    width:100px;
+    border-radius: 50px;
+    background-color: #B2B4D8;
+    color: white;
+}
+.hint:hover{
+    background-color:cornflowerblue;
+}.hint:active{
+    background-color: mediumseagreen;
+}

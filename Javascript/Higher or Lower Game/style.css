@@ -1,0 +1,33 @@
+body{  
+    border: 3px solid black;
+    padding: 30px;
+    margin: 150px;
+    border-radius: 20px;
+    background-color:#4eaeb1
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#guess{
+    display: flex;
+    justify-content:center;
+}
+
+#btn{
+    border-radius: 10px;
+    height: 35px;
+    width: 90px;
+}
+
+#click{
+    display:flex;
+    justify-content:center;
+
+
+}
