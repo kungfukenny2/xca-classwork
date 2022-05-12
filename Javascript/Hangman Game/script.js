@@ -1,128 +1,107 @@
-// //Don't freak out lol lets break it down into pieces
-
-// const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 
-//  Set Category and Words 
-// let movies = ['pulp fiction', 'avatar', 'titanic']
-// let food = ['sushi', 'pizza', 'burrito']
 
-// // chosenCategory; //selected category
-// let getHint; //for hint button 
-// let word; // selected word 
-// let guess;  //guess
-// let guesses = []; //stored guesses 
-// let lives; // remaining lives
-// let counter; //correct guesses
-// let space; //number of spaces in the word 
-let randomNum = Math.flood(Math.random() * 3) 
+let chosenWord;
 
 
-// //Now we plug in the elements:
-// // let showLives = document.getElementById('mylives')
-
-// //Pick a random word from the array 
-// // let word = word[Math.floor(Math.random() * word.length)];
-
-// //set up answerArray to show how many letters there are using _'s 
-// let answerArray = [];
-// for (let i = 0; i < word.length; i++) {
-//     answerArray[i] = "_";
-// }
-
-// //create a variable to hold the number of remainingLetters to be guessed
-// let remainingLetters = word.length; 
-
-// //          **** THE MAIN GAME LOOP ****
-
-// //while there are letters left to be guessed
-// while(remainingLetters > 0){
-    //show the player their progress
-    alert(answerArray.join(" "))
+function letter(letter) {
+    // if the selected letter is in chosenWord ->
+    if (chosenWord.includes(letter)) {
+        // all the indexes that the letter occurs
+        let letterIndexes = chosenWord
+            .split("")
+            .map(function (c, i) {
+                if (c === letter) {
+                    return i;
+                }
+            })
+            .filter(function (v) {
+                return v !== undefined;
+            });
 
 
-    //get a guess from the player
-    let guess = prompt
+        // change the dashes at those indexes to be letter
+        const dashDiv = document.getElementById("dash2");
+        const dashes = dashDiv.getElementsByTagName('p');
 
-    //if the guess is blank
-    if(guess == null){
-        //exit game loop
-        break;
-    } else if (guess.length !== 1) {
-        alert("please enter single letter");
-    }else{
-        //update game state with 
+        for (let i = 0; i < letterIndexes.length; i++) {
+            dashes[letterIndexes[i]].innerHTML = letter;
+        }
+        let hasWon = !dashDiv.innerHTML.includes("_")
+        if (hasWon) {
+            alert('correct, you win!')
+        } //add lose alert 
+    }
+
+    // else ->
+    else {
+        myLives()
     }
 }
 
+function chosenCategory(category) {
+    let categList;
 
+    if (category === 'food') {
+        categList = ['sushi', 'burrito', 'pizza']
+    } else {
+        categList = ['pulp fiction', 'titanic', 'avatar']
+    }
 
+    chosenWord = categList[Math.floor(Math.random() * 3)]
 
+    const dashDiv = document.getElementById("dash2");
 
-let player know the work that was correct
- alert(answerArray.join(" "));
- alert(Good Job! You guessed correctly)
+    for (var i = 0; i < chosenWord.length; i++) {
+        const dash = document.createElement("p");
+        const node = document.createTextNode("__");
 
+        dash.appendChild(node);
 
+        dashDiv.appendChild(dash);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-// //Possible things I'll need later 
-
-// //!--> turns boolean true  
-
-// // let answer = '';
-// // let numberOfLives = 6 
-// // let guess = []
-
-
-// // function randomWord(){
-// //     answer = setWord[Math.floor(Math.random() * setWord.length)]
-    
-// // }
-
-
-
-
-function letter(letter){
-    //does the word have the letter?
-    //if true-- fill in spaces
-    //else we count as error 
-   // alert console.log()
-
+    document.getElementById("foodCat").disabled = true;
+    document.getElementById("movieCat").disabled = true;
 }
 
-function chosenCategory(category){
-    alert ('You choose ' + category )
+//Remaining Lives
+function myLives() {
+    let myLives = document.getElementById("myLives").innerHTML;
+    document.getElementById('myLives').innerHTML = myLives - 1;
+    if (myLives === '1') {
+        alert('Sorry you lost, try again?')
+    }
 }
 
-    const movies = ['pulp fiction', 'titanic', 'avatar']
-    let movie = movies[Math.floor(Math.random()* 3)]
-    
+//hints
+function hint() {
+    descriptions = {
+        'sushi': 'A Japanese dish',
+        'burrito': 'Mexican Dish rolled in a tortilla',
+        'pizza': 'Pinapple does not belong on it',
+        'pulp fiction': '1994 Quentin Tarantino film',
+        'titanic': 'James Cameron film with Leonardo Dicaprio',
+        'avatar': 'Another James Cameron film, but with blue people'
+    }
 
+    alert(descriptions[chosenWord])
+}
 
-   const foods= ['sushi', 'burrito', 'pizza']
-   let food = foods[Math.floor(Math.random()* 3)]
-    let hint= foods randomNum = Math.flood(Math.random() * 3) 
+//to restart the game
+resetGame = function () {
+    // Restarting the main properties.
+    document.getElementById('myLives').innerHTML = 6;
+    chosenWord = null;
 
+    const dashDiv = document.getElementById("dash2");
 
-   function hint(hint) {
-       alert()
+    let child = dashDiv.lastElementChild
+    while (child) {
+        dashDiv.removeChild(child);
+        child = dashDiv.lastElementChild
+    }
 
-    hint = [
-      ["A Quentin Tarantino film", "A 1997 James Cameron film", "A James Cameron film, but with blue people"],
-      ["A Japanese dish", "food wrapped in a tortilla", "Historically Italian dish"]
-    
-  ]
-    console.log(hint)
-    alert(randomNum)
-   }
+    document.getElementById("movieCat").disabled = false;
+    document.getElementById("foodCat").disabled = false;
+}

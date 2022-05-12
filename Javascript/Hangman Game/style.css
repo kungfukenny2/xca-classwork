@@ -21,6 +21,9 @@ h1, h3{
     color:white; 
     
 }
+.letter:hover{
+    cursor: pointer;
+}
 
 #letter{
     background-color:#B2B4D8;
@@ -47,7 +50,7 @@ h1, h3{
     display:flex;
     justify-content: center;
 }
-#category{
+#movieCat{
     height:40px;
     width:100px;
     border-radius: 50px;
@@ -55,15 +58,38 @@ h1, h3{
     color:white;
 }
 
-#category:hover{
+#movieCat:hover{
     background-color:cornflowerblue;
 }
-#category:active{
+#movieCat:active{
     background-color:mediumseagreen;
 }
-#category:focus{
+#movieCat:focus{
     background-color: mediumseagreen;
 }
+
+#foodCat{
+    height:40px;
+    width:100px;
+    border-radius: 50px;
+    background-color: #B2B4D8;
+    color:white;
+}
+
+#foodCat:hover{
+    background-color:cornflowerblue;
+}
+#foodCat:active{
+    background-color:mediumseagreen;
+}
+#foodCat:focus{
+    background-color: mediumseagreen;
+}
+
+
+
+
+
 
 .dash1{
     display: flex;
@@ -78,7 +104,7 @@ h1, h3{
 
 }
 
-.play{
+#play{
     height:40px;
     width:100px;
     border-radius: 50px;
@@ -86,24 +112,24 @@ h1, h3{
     color:white;
 }
 
-.play:hover{
+#play:hover{
     background-color:cornflowerblue;
 }
-.play:active{
+#play:active{
     background-color: mediumseagreen;
 }
 
 
 
-.hint{
+#hint{
     height:40px;
     width:100px;
     border-radius: 50px;
     background-color: #B2B4D8;
     color: white;
 }
-.hint:hover{
+#hint:hover{
     background-color:cornflowerblue;
-}.hint:active{
+}#hint:active{
     background-color: mediumseagreen;
 }
